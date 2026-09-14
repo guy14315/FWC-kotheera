@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .shops {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .shop {
+            text-align: center;
+        }
+
+        .shop img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            display: block;
+        }
+
+        hr {
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .copyright {
+            text-align: right;
+            font-family: monospace;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let&rsquo;s go shopping!</h1>
+
+    <div class="shops">
+        <div class="shop">
+            <a href="https://www.amazon.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+            </a>
+            <br>
+            <a href="https://www.amazon.com">https://www.amazon.com</a>
+        </div>
+        <div class="shop">
+            <a href="https://www.ebay.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay">
+            </a>
+            <br>
+            <a href="https://www.ebay.com">https://www.ebay.com</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="copyright">&copy; kobkarn 2026</p>
+</body>
+
+</html>
