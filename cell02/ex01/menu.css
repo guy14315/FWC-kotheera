@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf6ea;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.menu {
+    width: 260px;
+    background: #fff;
+    border: 2px solid #e2001a;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.menu summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #e2001a;
+}
+
+.menu ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+}
+
+.menu li {
+    margin: 6px 0;
+}
