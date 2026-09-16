@@ -37,7 +37,6 @@ header h1 {
     object-fit: cover;
 }
 
-/* table used only to align text, no visible grid */
 .info {
     border-collapse: collapse;
     margin: 20px 0;

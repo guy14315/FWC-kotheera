@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #f2f4f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+#app {
+    width: 100%;
+    max-width: 480px;
+    padding: 32px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#ft_new {
+    display: block;
+    margin: 0 auto 24px;
+    padding: 10px 28px;
+    background: #2f6fed;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#ft_new:hover {
+    background: #2158c4;
+}
+
+#ft_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-item {
+    background: #fff;
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    word-break: break-word;
+    transition: background 0.15s;
+}
+
+.todo-item:hover {
+    background: #ffecec;
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}

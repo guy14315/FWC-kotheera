@@ -1,0 +1,43 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc {
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.member,
+.operator,
+.submit {
+	padding: 8px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.member {
+	width: 80px;
+	text-align: center;
+}
+
+.submit {
+	background-color: #4caf50;
+	border-color: #4caf50;
+	color: white;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: #449d48;
+}
