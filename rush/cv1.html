@@ -4,100 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kobkarn</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kobkarn - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cv.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#showcase">Showcase</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">&larr; Team</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#showcase">Showcase</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <div class="page-content">
+    <main class="page-content">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p style="text-align:center;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ym3EdBYIICeHefbZKxxe5P159vwGi3MmmqAY0rfQ2Y6ZyqsY5zFx_Qw&s=10"
-                    alt="guy-avatar" class="avatar">
-            </p>
-            <h3 style="text-align:center;">Kobkarn Theerarangsikul</h3>
-            <p>
-                Hi, I'm Kobkarn Theerarangsikul, but you can call me Guy. I'm a student at KMITL,
-                currently majoring in Computer Science.
-            </p>
-            <p>
-                In my free time, I like to play video games, read books, and
-                watch movies. Here are some of my favorite video games:
-            </p>
-            <ul>
-                <li>The Witcher 3</li>
-                <li>Assassin's Creed IV: Black Flag</li>
-                <li>Wasteland 3</li>
-                <li>Cyberpunk 2077</li>
-            </ul>
+        <section id="about" class="profile-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ym3EdBYIICeHefbZKxxe5P159vwGi3MmmqAY0rfQ2Y6ZyqsY5zFx_Qw&s=10"
+                alt="Kobkarn avatar" class="avatar avatar-large">
+            <h1>Kobkarn Theerarangsikul</h1>
+            <p class="subtitle">Computer Science Major @ KMITL</p>
+
+            <div class="bio-card">
+                <p>Hi, I'm Kobkarn Theerarangsikul, but you can call me Guy. I'm a student at KMITL,
+                    currently majoring in Computer Science.</p>
+                <p>In my free time, I like to play video games, read books, and
+                    watch movies. Here are some of my favorite video games:</p>
+                <div class="interests-tags">
+                    <span class="tag">The Witcher 3</span>
+                    <span class="tag">Assassin's Creed IV</span>
+                    <span class="tag">Wasteland 3</span>
+                    <span class="tag">Cyberpunk 2077</span>
+                </div>
+            </div>
         </section>
 
         <section id="showcase">
             <h2>Showcase</h2>
-            <h3>Skills</h3>
+
+            <h3>Technical Skills</h3>
             <ul class="skills">
                 <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                        alt="Python icon" class="skill-icon"> Python</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java icon"
-                        class="skill-icon"> Java </li>
+                        alt="Python" class="skill-icon"> Python</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                        class="skill-icon"> Java</li>
                 <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                        alt="Docker icon" class="skill-icon"> Docker</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                        alt="HTML icon" class="skill-icon"> HTML</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS icon"
+                        alt="Docker" class="skill-icon"> Docker</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                        class="skill-icon"> HTML5</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
                         class="skill-icon"> CSS</li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git icon"
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
                         class="skill-icon"> Git</li>
             </ul>
 
-            <h3>Projects</h3>
-            <p>Currently working on this project with my friends</p>
-            <div class="project">
-                <img src="img/smartgrad.png" alt="Screenshot of SmartGrad upload page" class="project-img">
+            <h3 style="margin-top: 2rem;">Projects</h3>
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="img/smartgrad.png" alt="SmartGrad Screenshot" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h4>SmartGrad</h4>
+                    <p>A smart web application designed to help KMITL students track degree progress by parsing
+                        transcript PDFs and generating next-semester study plans.</p>
+                    <a href="https://github.com/guy14315/smartgrad" target="_blank" rel="noopener"
+                        class="btn-secondary">View on GitHub &rarr;</a>
+                </div>
             </div>
-            <h4>SmartGrad</h4>
-            <p>
-                A web app that helps KMITL students track their study progress.
-                You upload your transcript PDF, and it checks how much of the curriculum you
-                have completed and suggests a study plan for next semester.
-                It also has a page for advisors to follow their students.
-            </p>
-            <p><a href="https://github.com/guy14315/smartgrad" target="_blank" rel="noopener">View on GitHub</a></p>
-    </div>
-    </section>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>2018 - 2024: Bodindecha (Sing Singhaseni) 2</li>
-            <li>2024 - Present: KMITL</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <strong>Bodindecha (Sing Singhaseni) 2</strong>
+                        <p>High School Diploma</p>
+                    </div>
+                    <div class="timeline-date">2018 &mdash; 2024</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <strong>KMITL</strong>
+                        <p>Bachelor of Science in Computer Science</p>
+                    </div>
+                    <div class="timeline-date">2024 &mdash; Present</div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can find me here:</p>
-        <ul>
-            <li><a href="https://github.com/guy14315" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://www.instagram.com/kobkrn/" target="_blank" rel="noopener">Instagram</a></li>
-        </ul>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <a href="https://github.com/guy14315" target="_blank" rel="noopener" class="contact-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="contact-logo">
+                    <div class="contact-details">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-sub">@guy14315</span>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/kobkrn/" target="_blank" rel="noopener" class="contact-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                        alt="Instagram" class="contact-logo">
+                    <div class="contact-details">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-sub">@kobkrn</span>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Kobkarn Theerarangsikul - <a href="index.html">Back to home</a></p>
+        <p>&copy; 2026 Kobkarn Theerarangsikul &bull; <a href="index.html">Back to home</a></p>
     </footer>
 
 </body>

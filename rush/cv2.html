@@ -1,95 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teammate [Name] - CV</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacharapol - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cv.css">
 </head>
+
 <body>
 
-  <!-- navbar, always visible -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="#showcase">Showcase</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="page-content">
-
-    <!-- About section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p style="text-align:center;">
-        <img src="https://i.pravatar.cc/300?img=5" alt="Photo of Teammate [Name]" class="avatar">
-      </p>
-      <h3 style="text-align:center;">Teammate [Name]</h3>
-      <p>
-        [Placeholder] Hi, I'm Teammate, a student at 42 doing the Piscine Discovery.
-        I studied [placeholder field of study] before joining 42, and I'm interested in
-        [placeholder interest, e.g. web design or games].
-      </p>
-      <p>
-        Outside of coding I enjoy [placeholder hobby 1], [placeholder hobby 2] and
-        [placeholder hobby 3].
-      </p>
-    </section>
-
-    <!-- Showcase section: skills and projects -->
-    <section id="showcase">
-      <h2>Showcase</h2>
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML &amp; CSS (beginner)</li>
-        <li>JavaScript (beginner)</li>
-        <li>C (beginner)</li>
-        <li>Git (beginner)</li>
-      </ul>
-
-      <h3>Projects</h3>
-      <div class="cards">
-        <div class="card">
-          <h4>[Placeholder] Portfolio page</h4>
-          <p>A simple personal page built to practice HTML and CSS.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">&larr; Team</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#showcase">Showcase</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="card">
-          <h4>[Placeholder] Rush project</h4>
-          <p>This website, made during the Piscine Discovery rush.</p>
-        </div>
-        <div class="card">
-          <h4>[Placeholder] Mini game</h4>
-          <p>Small browser game made during a short hackathon.</p>
-        </div>
-      </div>
-    </section>
+    </nav>
 
-    <!-- Education section -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>2026 - Present: 42 Network, Piscine Discovery</li>
-        <li>[Placeholder years]: [Placeholder] High School / University Name</li>
-      </ul>
-    </section>
+    <main class="page-content">
 
-    <!-- Contact section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can find me here:</p>
-      <ul>
-        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
-      </ul>
-    </section>
+        <section id="about" class="profile-header">
+            <img src="https://i.pinimg.com/236x/e3/b4/b6/e3b4b60692928d6ba44d0fa8bd22c053.jpg" alt="Pacharapol avatar"
+                class="avatar avatar-large">
+            <h1>Pacharapol Prasertsak</h1>
+            <p class="subtitle">Computer Science Major @ KMITL</p>
 
-  </div>
+            <div class="bio-card">
+                <p>Hi, I'm Pacharapol (or Dung). I'm currently studying Computer Science
+                    with a focus on web technologies and problem solving.</p>
+                <p> Outside of my studies, I enjoy playing video games, reading webtoons, and playing football.
+                    I like video games because they allow me to experience different stories and challenges,
+                    while football helps me stay active and enjoy spending time with others. </p>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2026 Teammate [Name] - <a href="index.html">Back to home</a></p>
-  </footer>
+        <section id="showcase">
+            <h2>Showcase</h2>
+
+            <h3>Technical Skills</h3>
+            <ul class="skills">
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" class="skill-icon"> Python</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                        class="skill-icon"> Java</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        alt="Docker" class="skill-icon"> Docker</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                        class="skill-icon"> HTML5</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                        class="skill-icon"> CSS</li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                        class="skill-icon"> Git</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Projects</h3>
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="img/smartgrad.png" alt="SmartGrad Screenshot" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h4>SmartGrad</h4>
+                    <p>A smart web application designed to help KMITL students track degree progress by parsing
+                        transcript PDFs and generating next-semester study plans.</p>
+                    <a href="https://github.com/guy14315/smartgrad" target="_blank" rel="noopener"
+                        class="btn-secondary">View on GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <strong>Bodindecha (Sing Singhaseni) 2</strong>
+                        <p>High School Diploma</p>
+                    </div>
+                    <div class="timeline-date">2018 &mdash; 2024</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <strong>KMITL</strong>
+                        <p>Bachelor of Science in Computer Science</p>
+                    </div>
+                    <div class="timeline-date">2024 &mdash; Present</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <a href="https://github.com/dungkrab" target="_blank" rel="noopener" class="contact-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="contact-logo">
+                    <div class="contact-details">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-sub">@dungkrab</span>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/dun9dung/" target="_blank" rel="noopener" class="contact-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                        alt="Instagram" class="contact-logo">
+                    <div class="contact-details">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-sub">@dun9dung</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pacharapol Prasertsak &bull; <a href="index.html">Back to home</a></p>
+    </footer>
 
 </body>
+
 </html>
